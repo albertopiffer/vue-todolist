@@ -13,6 +13,7 @@
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
 		crossorigin="anonymous"
 	/>
+    <script src="https://kit.fontawesome.com/c517704bb6.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -44,12 +45,20 @@
 				<div class="container">
 					<div class="card">
 						<ul class="list-group list-group-flush">
-							<li
-								@click="removeTask(index)"
-								v-for="(task,index) in tasks"
-								class="list-group-item"
-							>
+							<li	
+                            
+							v-for="(task,index) in tasks"
+                            class="list-group-item d-flex justify-content-between">
+
 								{{ task.text }}
+
+                                <div
+                                @click="removeTask(index)"
+                                class="px-2 border border-secondary" 
+                                >
+                                <i class="fa-solid fa-xmark"></i>
+                                </div>
+
 							</li>
 						</ul>
 					</div>
