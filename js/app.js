@@ -12,7 +12,7 @@ createApp({
 
                 {
                     text: 'task2',
-                    done: false,
+                    done: true,
                 },
 
                 {

@@ -48,7 +48,9 @@
 							<li	
                             
 							v-for="(task,index) in tasks"
-                            class="list-group-item d-flex justify-content-between">
+                            class="list-group-item d-flex justify-content-between"							
+							:class="{ 'text-decoration-line-through': task.done }"
+                            >                           
 
 								{{ task.text }}
 
@@ -60,6 +62,7 @@
                                 </div>
 
 							</li>
+                            
 						</ul>
 					</div>
 				</div>
