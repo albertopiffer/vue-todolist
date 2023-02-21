@@ -22,7 +22,7 @@
     <div id="app">
 			<section class="py-5">
 				<div class="container">
-					<h1>TODOLIST</h1>
+					<h2>TODOLIST</h2>
 				</div>
 				<div class="container py-3">
 					<div class="mb-3 row">
@@ -48,6 +48,7 @@
 						<ul class="list-group list-group-flush">
 							<li	
                             
+							@click="invertiDone(task)"
 							v-for="(task,index) in tasks"
                             class="list-group-item d-flex justify-content-between"							
 							:class="{ 'text-decoration-line-through': task.done }"

@@ -48,5 +48,8 @@ createApp({
 			)
 			this.tasks.splice(startIndex, 1)
 		},
+		invertiDone (task) {
+			task.done = !task.done;
+		},
 	},
 }).mount('#app')
