@@ -33,7 +33,6 @@ createApp({
 
 	methods: {
 		addTask() {
-			// console.log('add task:', this.inputValue)
 			const newTask = {
                 text: this.inputValue,
                 done: false,
