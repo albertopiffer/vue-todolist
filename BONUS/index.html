@@ -57,7 +57,7 @@
 								{{ task.text }}
 
                                 <div
-                                @click="removeTask(index)"
+                                @click.stop="removeTask(index)"
                                 class="px-2 border border-secondary" 
                                 >
                                 <i class="fa-solid fa-xmark"></i>
